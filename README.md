@@ -1,42 +1,20 @@
-# MechaTools — Python Edition
+## 🚀 Live Demo
 
-An interactive engineering learning toolkit built with Python and Streamlit.
+Try MechaTools online:
 
-## Features
-- Stress, strain, and Young's modulus calculator
-- Factor of safety calculator
-- Ohm's law calculator
-- Constant-acceleration kinematics calculator
-- Engineering formula library
-- Practice question with worked solution
+[**Open MechaTools – Engineering Workspace**](https://mechatools-gh-wkzppnuwi7vhi8xwfcneqb.streamlit.app/)
 
-## Requirements
-- Python 3.10 or newer
-- pip
+## 🛠️ Built With
 
-## Run on Windows
-Open a terminal in this folder and run:
+- Python
+- Streamlit
 
-```powershell
-py -m venv .venv
-.venv\Scripts\activate
-py -m pip install -r requirements.txt
-py -m streamlit run app.py
-```
+## 👩‍💻 Project Goal
 
-If the `py` command is unavailable, try `python` instead.
+MechaTools is an educational engineering toolkit designed to help students explore engineering concepts, perform calculations, and practise problem-solving.
 
-Streamlit will start a local server and show a URL, usually http://localhost:8501. Open that address in your browser.
+## 📌 Project Status
 
-## Project files
-- `app.py` — the complete Streamlit application
-- `requirements.txt` — Python dependency list
+Version 1.0 — Student Edition
 
-## Engineering assumptions
-- Stress calculator assumes axial loading and a uniform cross-section.
-- Young's modulus is calculated using the linear-elastic relationship.
-- Factor of safety uses failure strength divided by working stress.
-- Kinematics assumes straight-line motion with constant acceleration.
-- Ohm's law assumes an ohmic component under the stated conditions.
-
-This is an educational project, not a substitute for professional engineering verification.
+More features and improvements coming soon!
