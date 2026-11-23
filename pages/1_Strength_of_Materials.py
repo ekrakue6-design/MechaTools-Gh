@@ -1,6 +1,5 @@
 import streamlit as st
 
-st.set_page_config(page_title="Strength of Materials | MechaTools", page_icon="🧱", layout="wide")
 st.title("🧱 Strength of Materials")
 st.caption("Additional learning calculators for material behaviour. Check assumptions and units.")
 
