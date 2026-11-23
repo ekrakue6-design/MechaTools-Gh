@@ -1,6 +1,5 @@
 import streamlit as st
 
-st.set_page_config(page_title="Practice Lab | MechaTools", page_icon="🧠", layout="wide")
 st.title("🧠 Practice Lab")
 st.write("A short mixed-topic check. Choose an answer, then check it.")
 
