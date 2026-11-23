@@ -1,7 +1,6 @@
 import math
 import streamlit as st
 
-st.set_page_config(page_title="Robotics | MechaTools", page_icon="🤖", layout="wide")
 st.title("🤖 Robotics")
 st.caption("Small tools for introductory mobile robotics and actuator calculations.")
 
