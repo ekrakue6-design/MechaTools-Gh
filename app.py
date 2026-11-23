@@ -39,7 +39,14 @@ page = st.sidebar.radio(
     ["Overview", "Stress & Strain", "Factor of Safety", "Ohm's Law", "Kinematics", "Formula Library", "Practice Corner"],
 )
 st.sidebar.divider()
-st.sidebar.caption("Version 1.0 · Student edition")
+st.sidebar.markdown("**NEW TOOLS · VERSION 2.0**")
+st.sidebar.page_link("pages/1_Strength_of_Materials.py", label="Strength of Materials")
+st.sidebar.page_link("pages/2_Electrical_Engineering.py", label="Electrical Engineering")
+st.sidebar.page_link("pages/3_Mechanics_of_Machines.py", label="Mechanics of Machines")
+st.sidebar.page_link("pages/4_Robotics.py", label="Robotics")
+st.sidebar.page_link("pages/5_Practice_Lab.py", label="Practice Lab")
+st.sidebar.divider()
+st.sidebar.caption("Version 2.0 · Student edition")
 
 if page == "Overview":
     st.markdown(
@@ -57,7 +64,7 @@ if page == "Overview":
     c1.metric("Calculators", "4", "Available")
     c2.metric("Formula topics", "3", "Materials · Circuits · Motion")
     c3.metric("Practice", "1", "Starter question")
-    c4.metric("Version", "1.0", "Python edition")
+    c4.metric("Version", "2.0", "Expanded toolkit")
     st.markdown("### Choose a tool")
     cards = st.columns(2)
     with cards[0]:
