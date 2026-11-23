@@ -11,22 +11,47 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp { background: #f4f7fb; }
-    [data-testid="stSidebar"] { background: #10283e; }
-    [data-testid="stSidebar"] * { color: #edf5fb; }
+    /* Follow the active Streamlit light/dark theme instead of forcing light colours. */
+    .stApp {
+        background: var(--background-color);
+        color: var(--text-color);
+    }
+    [data-testid="stSidebar"] {
+        background: var(--secondary-background-color);
+        border-right: 1px solid var(--border-color, rgba(128,128,128,.22));
+    }
+    [data-testid="stSidebar"] * {
+        color: var(--text-color);
+    }
     .hero {
         padding: 2rem 2.2rem;
         border-radius: 18px;
-        color: white;
+        color: #ffffff;
         background: linear-gradient(115deg, #10283e, #1d5275);
         margin-bottom: 1.5rem;
     }
-    .hero h1 { color: white; font-size: 2.5rem; margin-bottom: .4rem; }
-    .hero p { color: #d4e5f0; font-size: 1.05rem; }
-    .small-muted { color: #708397; font-size: .9rem; }
+    .hero h1 { color: #ffffff; font-size: 2.5rem; margin-bottom: .4rem; }
+    .hero p { color: #e1edf5; font-size: 1.05rem; }
+    .small-muted { color: var(--text-color); opacity: .72; font-size: .9rem; }
     div[data-testid="stMetric"] {
-        background: white; padding: 1rem; border-radius: 12px;
-        border: 1px solid #e2eaf2;
+        background: var(--secondary-background-color);
+        color: var(--text-color);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid var(--border-color, rgba(128,128,128,.22));
+    }
+    div[data-testid="stMetric"] label,
+    div[data-testid="stMetric"] [data-testid="stMetricValue"],
+    div[data-testid="stMetric"] [data-testid="stMetricDelta"] {
+        color: var(--text-color);
+    }
+    .stButton > button, .stDownloadButton > button {
+        border-radius: 10px;
+    }
+    /* Keep inputs and expanders readable in either theme. */
+    [data-testid="stExpander"], [data-testid="stPopover"] {
+        background: var(--secondary-background-color);
+        color: var(--text-color);
     }
     </style>
     """,
