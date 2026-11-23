@@ -1,6 +1,5 @@
 import streamlit as st
 
-st.set_page_config(page_title="Electrical Engineering | MechaTools", page_icon="⚡", layout="wide")
 st.title("⚡ Electrical Engineering")
 st.caption("Basic DC circuit calculations for learning and practice.")
 
