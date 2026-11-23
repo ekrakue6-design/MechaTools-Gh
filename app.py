@@ -37,7 +37,7 @@ st.sidebar.title("⚙️ MechaTools")
 st.sidebar.caption("ENGINEERING WORKSPACE")
 page = st.sidebar.radio(
     "NAVIGATION",
-    ["Overview", "Stress & Strain", "Factor of Safety", "Ohm's Law", "Kinematics", "Formula Library", "Practice Corner", "Strength of Materials", "Electrical Engineering", "Mechanics of Machines", "Robotics", "Practice Lab"],
+    ["Overview", "Stress & Strain", "Factor of Safety", "Ohm's Law", "Kinematics", "Formula Library", "Practice Corner", "Strength of Materials", "Electrical Engineering", "Mechanics of Machines", "Robotics", "Practice Lab", "Graph Plotter"],
 )
 st.sidebar.divider()
 st.sidebar.divider()
@@ -205,6 +205,8 @@ elif page == "Robotics":
     runpy.run_path("pages/4_Robotics.py")
 elif page == "Practice Lab":
     runpy.run_path("pages/5_Practice_Lab.py")
+elif page == "Graph Plotter":
+    runpy.run_path("pages/6_Graph_Plotter.py")
 
 st.divider()
 st.caption("MechaTools · Educational project · Verify engineering calculations and design assumptions before real-world use.")
