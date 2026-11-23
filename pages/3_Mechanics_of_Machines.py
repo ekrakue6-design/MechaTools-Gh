@@ -1,7 +1,6 @@
 import math
 import streamlit as st
 
-st.set_page_config(page_title="Mechanics of Machines | MechaTools", page_icon="⚙️", layout="wide")
 st.title("⚙️ Mechanics of Machines")
 st.caption("Explore simple machine relationships. Ideal equations may not include friction or losses.")
 
