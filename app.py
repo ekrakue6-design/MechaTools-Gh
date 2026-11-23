@@ -1,4 +1,5 @@
 import math
+import runpy
 import streamlit as st
 
 st.set_page_config(
@@ -36,15 +37,9 @@ st.sidebar.title("⚙️ MechaTools")
 st.sidebar.caption("ENGINEERING WORKSPACE")
 page = st.sidebar.radio(
     "NAVIGATION",
-    ["Overview", "Stress & Strain", "Factor of Safety", "Ohm's Law", "Kinematics", "Formula Library", "Practice Corner"],
+    ["Overview", "Stress & Strain", "Factor of Safety", "Ohm's Law", "Kinematics", "Formula Library", "Practice Corner", "Strength of Materials", "Electrical Engineering", "Mechanics of Machines", "Robotics", "Practice Lab"],
 )
 st.sidebar.divider()
-st.sidebar.markdown("**NEW TOOLS · VERSION 2.0**")
-st.sidebar.page_link("pages/1_Strength_of_Materials.py", label="Strength of Materials")
-st.sidebar.page_link("pages/2_Electrical_Engineering.py", label="Electrical Engineering")
-st.sidebar.page_link("pages/3_Mechanics_of_Machines.py", label="Mechanics of Machines")
-st.sidebar.page_link("pages/4_Robotics.py", label="Robotics")
-st.sidebar.page_link("pages/5_Practice_Lab.py", label="Practice Lab")
 st.sidebar.divider()
 st.sidebar.caption("Version 2.0 · Student edition")
 
@@ -199,6 +194,17 @@ elif page == "Practice Corner":
         st.write("Step 1: Use σ = F/A.")
         st.write("Step 2: Substitute: σ = 12,000 N ÷ 300 mm².")
         st.write("Step 3: σ = 40 N/mm² = 40 MPa.")
+
+elif page == "Strength of Materials":
+    runpy.run_path("pages/1_Strength_of_Materials.py")
+elif page == "Electrical Engineering":
+    runpy.run_path("pages/2_Electrical_Engineering.py")
+elif page == "Mechanics of Machines":
+    runpy.run_path("pages/3_Mechanics_of_Machines.py")
+elif page == "Robotics":
+    runpy.run_path("pages/4_Robotics.py")
+elif page == "Practice Lab":
+    runpy.run_path("pages/5_Practice_Lab.py")
 
 st.divider()
 st.caption("MechaTools · Educational project · Verify engineering calculations and design assumptions before real-world use.")
